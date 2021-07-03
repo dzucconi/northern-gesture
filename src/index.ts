@@ -11,10 +11,11 @@ const init = async () => {
     scaleControl: false,
     styles: [
       {
-        elementType: "geometry",
+        elementType: "labels",
         stylers: [{ visibility: "off" }],
       },
     ],
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
   });
 
   if (window.location.search.includes("autopilot")) {

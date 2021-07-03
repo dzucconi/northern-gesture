@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-      Seasoned explorers, vehemently insisting on what they had seen,
-      set down mountains and islands on their charts where there was
-      nothing but empty sky ... Expeditions sent out later to verify
-      these new lands sometimes saw the same fata morgana, further
-      confusing the issue. Only by prolonging their arduous journeys,
-      thereby observing a constant receding of the image, did they
-      prove that the land was not there at all.
-    -->
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="root" content="width=device-width" />
 
-    <title>Fata Morgana by Damon Zucconi, 2010</title>
+    <title>Northern Gesture by Damon Zucconi, 2009</title>
 
     <style type="text/css">
       html,
       body,
+      iframe,
       #root {
+        width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
       }
-    </style>
 
-    <script
-      type="text/javascript"
-      src="https://maps.google.com/maps/api/js?key=AIzaSyBWKWYXG4sMZ7xkepBvlzOmnzmyVFr6DLU&sensor=false"
-    ></script>
+      body {
+        overflow: hidden;
+      }
+
+      iframe {
+        border: none;
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+      }
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Map is wrapped in an <iframe> so that non-inverted control coordinates are passed -->
+      <iframe id="viewport" src="./viewport.html"></iframe>
+    </div>
 
-    <script src="./index.ts"></script>
+    <script>
+      // Pass through query params
+      document.getElementById(
+        "viewport"
+      ).src = `./viewport.html?${window.location.search}`;
+    </script>
 
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-5681004-9"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5681004-19"
     ></script>
 
     <script>
@@ -50,7 +58,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "UA-5681004-9");
+      gtag("config", "UA-5681004-19");
     </script>
   </body>
 </html>

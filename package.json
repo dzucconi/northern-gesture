@@ -1,7 +1,7 @@
 {
-  "name": "fata-morgana",
+  "name": "northern-gesture",
   "version": "1.0.0",
-  "repository": "git@github.com:dzucconi/fata-morgana.git",
+  "repository": "git@github.com:dzucconi/northern-gesture.git",
   "author": "dzucconi <mail@damonzucconi.com>",
   "license": "MIT",
   "scripts": {
