@@ -1,6 +1,4 @@
-import { wait } from "./util";
-import { rand, randomCity } from "./random";
-import { simulate } from "./autopilot";
+import { simulate, rand, wait } from "google-maps-autopilot";
 
 const init = async () => {
   const map = new google.maps.Map(document.getElementById("root"), {
@@ -21,7 +19,7 @@ const init = async () => {
 
   if (window.location.search.includes("autopilot")) {
     await wait(rand(1000, 5000));
-    await simulate(map, randomCity());
+    await simulate(map);
   }
 };
 
