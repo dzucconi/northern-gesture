@@ -9,6 +9,7 @@ const init = async () => {
     zoomControl: true,
     streetViewControl: false,
     scaleControl: false,
+    gestureHandling: "greedy",
     styles: [
       {
         elementType: "labels",
