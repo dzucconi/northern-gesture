@@ -1,5 +1,7 @@
 # Northern Gesture
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbf984fb-ba97-4622-b48d-45f6eeba1f90/deploy-status)](https://app.netlify.com/sites/damonzucconi-northern-gesture/deploys)
+
 ## Meta
 
 - **State**: production
