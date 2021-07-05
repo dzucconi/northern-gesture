@@ -3154,10 +3154,10 @@ globals@^13.2.0:
   dependencies:
     type-fest "^0.20.2"
 
-google-maps-autopilot@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/google-maps-autopilot/-/google-maps-autopilot-0.0.1.tgz#17d5ae3f89acba275dc99703bd3c60ffe4ade910"
-  integrity sha512-6J+CfzPDacCfP2EWh1gtFFnJug6DwpApw1q77a9eK4MtJb9zY8TyrzDD/CVQxDepI+KuGuqFJfOdagm1j5+3rA==
+google-maps-autopilot@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/google-maps-autopilot/-/google-maps-autopilot-0.1.1.tgz#4ba8e35da4e4dda9d1e083d4228f56bab491862a"
+  integrity sha512-xP6HXWFtxaB0Qkqk1WvTsRv+gaN7dOoJdtfD65LEu9+LzTWqb1GUNz4bwF4o/8MkeR9vxgF6iSs4SIxh1W1cSg==
 
 graceful-fs@^4.1.2, graceful-fs@^4.2.4:
   version "4.2.6"

@@ -1,4 +1,11 @@
-import { simulate, rand, wait } from "google-maps-autopilot";
+import {
+  simulate,
+  rand,
+  wait,
+  panTo,
+  randomCity,
+  zoomIn,
+} from "google-maps-autopilot";
 
 const init = async () => {
   const map = new google.maps.Map(document.getElementById("root"), {
@@ -22,6 +29,16 @@ const init = async () => {
   if (window.location.search.includes("autopilot")) {
     await wait(rand(1000, 5000));
     await simulate(map);
+  }
+
+  if (window.location.search.includes("zoom")) {
+    const zoom = async () => {
+      panTo(map, randomCity());
+      await zoomIn(map, 200, 200);
+      await zoom();
+    };
+
+    zoom();
   }
 };
 
