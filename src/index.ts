@@ -35,7 +35,7 @@ const init = async () => {
   if (window.location.search.includes("zoom")) {
     const zoom = async () => {
       panTo(map, randomCity());
-      await _zoom(map, range(4, 18, 1), 50, 500);
+      await _zoom(map, range(4, 18, 1), 50, 50);
       await zoom();
     };
 
