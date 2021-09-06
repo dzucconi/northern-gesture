@@ -4,7 +4,8 @@ import {
   wait,
   panTo,
   randomCity,
-  zoomIn,
+  zoom as _zoom,
+  range,
 } from "google-maps-autopilot";
 
 const init = async () => {
@@ -34,7 +35,7 @@ const init = async () => {
   if (window.location.search.includes("zoom")) {
     const zoom = async () => {
       panTo(map, randomCity());
-      await zoomIn(map, 200, 200);
+      await _zoom(map, range(4, 18, 1), 50, 500);
       await zoom();
     };
 
